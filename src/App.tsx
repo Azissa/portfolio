@@ -5,7 +5,6 @@ import About from "./frontend/pages/about";
 import Project from "./frontend/pages/project";
 import Contact from "./frontend/pages/contact";
 
-// Tambahkan tipe untuk router
 const router = createBrowserRouter([
   {
     path: "/",
