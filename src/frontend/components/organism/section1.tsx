@@ -1,5 +1,6 @@
 import { HeroRight } from "../molecules/heroRight";
 import { HeroLeft } from "../molecules/heroLeft";
+import ContributionGraph from "../molecules/contributionGraph";
 
 const Section1 = () => {
   return (
@@ -8,10 +9,11 @@ const Section1 = () => {
         <div className="flex justify-center pl-16">
           <HeroLeft />
         </div>
-        <div className="flex items-center col-span-2 pl-4">
+        <div className="flex items-center col-span-2 ">
           <HeroRight />
         </div>
       </section>
+      <ContributionGraph />
     </>
   );
 };

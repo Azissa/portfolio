@@ -1,9 +1,13 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./frontend/pages/home";
-import React from "react";
-import About from "./frontend/pages/about";
-import Project from "./frontend/pages/project";
-import Contact from "./frontend/pages/contact";
+// src/App.tsx
+import React, { Suspense, lazy } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Loading from './frontend/components/elements/loading';
+
+// Lazy load halaman
+const Home = lazy(() => import('./frontend/pages/home'));
+const About = lazy(() => import('./frontend/pages/about'));
+const Project = lazy(() => import('./frontend/pages/project'));
+const Contact = lazy(() => import('./frontend/pages/contact'));
 
 const router = createBrowserRouter([
   {
@@ -27,7 +31,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <Suspense fallback={<Loading />}>
+        <RouterProvider router={router} />
+      </Suspense>
     </React.StrictMode>
   );
 };
