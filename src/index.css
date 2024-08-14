@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-activity-calendar__legend-month {
+  @apply text-white;
+}
+
+.styles-module_legendColors__kFY2e {
+  @apply text-white;
+}
