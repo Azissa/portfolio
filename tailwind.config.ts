@@ -18,10 +18,6 @@ export default {
         "untuk-label": "#d4d6ff",
         "untuk-label-hover": "#a9aeff",
       },
-      boxShadow: {
-        "custom-light": "0 4px 6px rgba(255, 255, 255, 0.4)",
-        "custom-dark": "0 4px 6px rgba(0, 0, 0, 0.4)",
-      },
     },
   },
   plugins: [],
