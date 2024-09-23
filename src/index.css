@@ -9,3 +9,7 @@
 .styles-module_legendColors__kFY2e {
   @apply text-white;
 }
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
